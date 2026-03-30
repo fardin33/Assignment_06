@@ -1,85 +1,9 @@
-import React from "react";
+import { use } from "react";
 
-const toolsData = [
-  {
-    id: 1,
-    title: "AI Writing Pro",
-    description:
-      "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
-    price: "$29",
-    period: "/Mo",
-    badge: "Best Seller",
-    badgeStyles: "bg-orange-100 text-orange-600",
-    icon: "📝",
-    features: [
-      "Unlimited AI generations",
-      "50+ writing templates",
-      "Grammar checker",
-    ],
-  },
-  {
-    id: 2,
-    title: "Design Templates Pack",
-    description:
-      "2000+ premium templates for social media, presentations, and marketing materials.",
-    price: "$49",
-    period: "/One-Time",
-    badge: "Popular",
-    badgeStyles: "bg-indigo-100 text-indigo-600",
-    icon: "🎨",
-    features: ["2000+ templates", "Monthly updates", "Commercial license"],
-  },
-  {
-    id: 3,
-    title: "Premium Stock Assets",
-    description:
-      "Access millions of royalty-free photos, videos, and graphics for your projects.",
-    price: "$19",
-    period: "/Mo",
-    badge: "New",
-    badgeStyles: "bg-green-100 text-green-600",
-    icon: "📸",
-    features: ["10M+ assets", "Commercial use", "No attribution"],
-  },
-  {
-    id: 4,
-    title: "Automation Toolkit",
-    description:
-      "Automate repetitive tasks and streamline your workflow with powerful tools.",
-    price: "$79",
-    period: "/Mo",
-    badge: "Popular",
-    badgeStyles: "bg-indigo-100 text-indigo-600",
-    icon: "⚙️",
-    features: ["50+ automations", "API access", "Custom workflows"],
-  },
-  {
-    id: 5,
-    title: "Resume Builder Pro",
-    description:
-      "Create professional resumes and cover letters that land interviews.",
-    price: "$15",
-    period: "/One-Time",
-    badge: "New",
-    badgeStyles: "bg-green-100 text-green-600",
-    icon: "📄",
-    features: ["100+ templates", "ATS optimization", "Export to PDF"],
-  },
-  {
-    id: 6,
-    title: "Social Media Content Kit",
-    description:
-      "Complete toolkit for creating engaging social media content across all platforms.",
-    price: "$39",
-    period: "/Mo",
-    badge: "Best Seller",
-    badgeStyles: "bg-orange-100 text-orange-600",
-    icon: "📱",
-    features: ["5000+ assets", "Scheduler included", "Analytics dashboard"],
-  },
-];
+const PremiumTools = ({ toolsPromise }) => {
+  const toolsData = use(toolsPromise);
+  console.log(toolsData);
 
-const PremiumTools = () => {
   return (
     <div>
       <div className="w-full mt-10 font-sans">
@@ -115,7 +39,7 @@ const PremiumTools = () => {
                 {/* Icon & Badge */}
                 <div className="flex justify-between items-start mb-4">
                   <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-xl shadow-inner">
-                    {tool.icon}
+                    <img src={tool.icon} alt="" />
                   </div>
                   <span
                     className={`px-3 py-1 text-xs font-semibold rounded-full ${tool.badgeStyles}`}
@@ -126,7 +50,7 @@ const PremiumTools = () => {
 
                 {/* Title Text  */}
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  {tool.title}
+                  {tool.name}
                 </h3>
                 <p className="text-gray-500 text-sm mb-6 grow">
                   {tool.description}
@@ -134,8 +58,8 @@ const PremiumTools = () => {
 
                 {/* Pricing */}
                 <div className="mb-6">
-                  <span className="text-3xl font-extrabold text-gray-900">
-                    {tool.price}
+                  <span className=" lg:text-2xl font-extrabold text-gray-900">
+                    {` ${tool.price} `}
                   </span>
                   <span className="text-sm text-gray-500 font-medium">
                     {tool.period}

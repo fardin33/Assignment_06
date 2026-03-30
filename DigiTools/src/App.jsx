@@ -1,21 +1,42 @@
 import "./App.css";
-// import Navbar from "./Navbar/Navbar";
-import SuperCharge from "./Hero/SuperCharge";
-import PremiumTools from "./PremiumTools/PremiumTools";
-import CartCheckout from "./CartCheckout/CartCheckout";
-import GetStarted from "./GetStarted/GetStarted";
-import SimplePricing from "./SimplePricing/SimplePricing";
-import Footer from "./Footer/Footer";
-import TransformWorkflow from "./TransformWorkflow/TransformWorkflow";
-import Navbar from "./Navbar/Navbar";
+import SuperCharge from "./Components/Hero/SuperCharge";
+import PremiumTools from "./Components/PremiumTools/PremiumTools";
+import CartCheckout from "./Components/CartCheckout/CartCheckout";
+import GetStarted from "./Components/GetStarted/GetStarted";
+import SimplePricing from "./Components/SimplePricing/SimplePricing";
+import Footer from "./Components/Footer/Footer";
+import TransformWorkflow from "./Components/TransformWorkflow/TransformWorkflow";
+import Navbar from "./Components/Navbar/Navbar";
+import { Suspense } from "react";
+// import CardUi from "./Components/Card/CardUi";
+
+// Fetch Data From API :
+const fetchToolsData = async () => {
+  const res = await fetch("/toolsData.json");
+  return res.json();
+};
 
 function App() {
+  // set Promise :
+  const toolsPromise = fetchToolsData();
+
   return (
     <>
       <Navbar />
       <SuperCharge />
-      <PremiumTools />
+
+      <Suspense
+        fallback={
+          <div className="flex items-center justify-center min-h-[50vh]">
+            <span className="loading loading-spinner loading-xl text-blue-400"></span>
+          </div>
+        }
+      >
+        <PremiumTools toolsPromise={toolsPromise} />
+      </Suspense>
+
       <CartCheckout />
+      {/* <CardUi/> */}
       <GetStarted />
       <SimplePricing />
       <TransformWorkflow />

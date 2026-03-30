@@ -1,0 +1,136 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Resume Builder",
+    "description": "Create simple and clean resumes quickly with basic templates.",
+    "price": 5,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["20+ templates", "Basic editing", "Download as PDF"],
+    "icon": "https://i.ibb.co.com/rKvM1NWT/design-tool.png"
+  },
+  {
+    "id": 2,
+    "name": "Pro Resume Kit",
+    "description": "Advanced resume builder with ATS optimization and premium templates.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "https://i.ibb.co.com/998dHS2h/operation.png"
+  },
+  {
+    "id": 3,
+    "name": "Career Boost Plan",
+    "description": "Full career toolkit including resume, cover letter, and portfolio.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Resume builder", "Cover letter generator", "Portfolio hosting"],
+    "icon": "https://i.ibb.co.com/TMsr3BmY/portfolio.png"
+  },
+  {
+    "id": 4,
+    "name": "Freelancer Toolkit",
+    "description": "Perfect for freelancers to showcase skills and projects.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Project showcase", "Client-ready templates", "Custom branding"],
+    "icon": "https://i.ibb.co.com/mV8SmKKv/shopping-cart.png"
+  },
+  {
+    "id": 5,
+    "name": "Student Starter Pack",
+    "description": "Ideal for students creating their first resume.",
+    "price": 5,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Beginner templates", "Guided writing tips", "Easy export"],
+    "icon": "https://i.ibb.co.com/PZpHmSKJ/social-media.png"
+  },
+  {
+    "id": 6,
+    "name": "Executive Pro Suite",
+    "description": "Premium solution for executives and senior professionals.",
+    "price": 199,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Executive templates", "Personal branding tools", "Priority support"],
+    "icon": "https://i.ibb.co.com/HLyJQJvD/writing-2327400-1.png"
+  },
+  {
+    "id": 7,
+    "name": "Portfolio Builder",
+    "description": "Build stunning personal portfolios with ease.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Custom layouts", "Image galleries", "Live preview"],
+    "icon": "https://i.ibb.co.com/PZpHmSKJ/social-media.png"
+  },
+  {
+    "id": 8,
+    "name": "Job Hunter Pack",
+    "description": "Everything you need to land your next job.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Resume + Cover letter", "Job tracking", "Interview tips"],
+    "icon": "https://i.ibb.co.com/rKvM1NWT/design-tool.png"
+  },
+  {
+    "id": 9,
+    "name": "Minimal Resume Pack",
+    "description": "Clean and minimal resume templates for professionals.",
+    "price": 8,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Minimal templates", "Easy customization", "Fast export"],
+    "icon": "https://i.ibb.co.com/PZpHmSKJ/social-media.png"
+  },
+  {
+    "id": 10,
+    "name": "Creative Designer Kit",
+    "description": "Designed for creative professionals and designers.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Creative templates", "Color customization", "Portfolio integration"],
+    "icon": "https://i.ibb.co.com/PZpHmSKJ/social-media.png"
+  },
+  {
+    "id": 11,
+    "name": "Ultimate Career Bundle",
+    "description": "All-in-one package for complete career growth.",
+    "price": 249,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["All templates access", "AI suggestions", "Unlimited exports"],
+    "icon": "https://i.ibb.co.com/PZpHmSKJ/social-media.png"
+  },
+  {
+    "id": 12,
+    "name": "Quick CV Generator",
+    "description": "Generate a professional CV in minutes.",
+    "price": 10,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Fast CV creation", "Auto formatting", "Download instantly"],
+    "icon": "https://i.ibb.co.com/TMsr3BmY/portfolio.png"
+  }
+]
+
+

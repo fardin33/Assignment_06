@@ -1,5 +1,5 @@
 import React from "react";
-import superchargeImg from "../assets/images/banner.png";
+import superchargeImg from "../../assets/images/banner.png";
 
 const SuperCharge = () => {
   return (
