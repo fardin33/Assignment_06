@@ -127,8 +127,8 @@ import startImg from "../../assets/images/rocket.png";
 
 const GetStarted = () => {
   return (
-    <div className="w-full mt-10 font-sans bg-gray-50/50">
-      <div className="px-5 py-12 md:px-12 lg:px-24 lg:py-20 max-w-7xl mx-auto">
+    <div className="w-full mt-10 font-sans bg-gray-50/50 ">
+      <div className="px-5 py-12 md:px-12 lg:px-40 lg:py-20 max-w-8xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">

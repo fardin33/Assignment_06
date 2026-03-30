@@ -39,9 +39,9 @@ const SimplePricing = () => {
                   "Basic templates",
                   "Community support",
                   "1 project/mo",
-                ].map((item, idx) => (
+                ].map((item, index) => (
                   <li
-                    key={idx}
+                    key={index}
                     className="flex items-start gap-2 text-slate-600 text-xs lg:text-[14px]"
                   >
                     <svg
@@ -94,9 +94,9 @@ const SimplePricing = () => {
                   "Priority support",
                   "Unlimited projects",
                   "Cloud sync",
-                ].map((item, idx) => (
+                ].map((item, index) => (
                   <li
-                    key={idx}
+                    key={index}
                     className="flex items-start gap-2 text-purple-50 text-xs lg:text-[14px]"
                   >
                     <svg
@@ -145,9 +145,9 @@ const SimplePricing = () => {
                   "Custom integrations",
                   "Dedicated support",
                   "SLA guarantee",
-                ].map((item, idx) => (
+                ].map((item, index) => (
                   <li
-                    key={idx}
+                    key={index}
                     className="flex items-start gap-2 text-slate-600 text-xs lg:text-[14px]"
                   >
                     <svg
