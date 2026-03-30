@@ -1,6 +1,5 @@
 import React from "react";
 
-// কার্ডের ডেটাগুলো আলাদা করে রাখা হয়েছে যাতে পরে সহজেই পরিবর্তন করা যায়
 const toolsData = [
   {
     id: 1,
@@ -11,7 +10,7 @@ const toolsData = [
     period: "/Mo",
     badge: "Best Seller",
     badgeStyles: "bg-orange-100 text-orange-600",
-    icon: "📝", // এখানে আপনি চাইলে SVG বসাতে পারেন
+    icon: "📝", 
     features: [
       "Unlimited AI generations",
       "50+ writing templates",
