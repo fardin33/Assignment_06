@@ -1,7 +1,6 @@
 import "./App.css";
-import SuperCharge from "./Hero/SuperCharge";
-
 import Navbar from "./Navbar/Navbar";
+import SuperCharge from "./Hero/SuperCharge";
 import PremiumTools from "./PremiumTools/PremiumTools";
 
 function App() {

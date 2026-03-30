@@ -5,7 +5,7 @@ const SuperCharge = () => {
   return (
     <div>
       <div className="w-full mt-10">
-        <div className="px-5 md:px-10 lg:px-37 py-12 lg:py-20">
+        <div className="px-5 py-12 md:px-10 lg:px-37 lg:py-20">
           {/* Main - Hero Content */}
           <div className="flex flex-col md:flex-row items-center justify-between gap-10">
             {/* Left Part : */}
@@ -80,8 +80,8 @@ const SuperCharge = () => {
           </div>
         </div>
 
-        {/* Status Part : */}
-        <div className="bg-[#7C3AED] w-full py-12">
+        {/* Stats Part : */}
+        <div className="bg-[#7C3AED] w-full py-7 md:py-10 lg:py-13">
           <div className="px-2 md:px-10 lg:px-37 max-w-360 mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-0 items-center">
               {/* Status part : 01 */}
