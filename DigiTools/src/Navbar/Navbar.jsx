@@ -51,7 +51,7 @@ const Navbar = () => {
             </div>
             <a
               href="#"
-              className="text-[18px] md:text-[23px] lg:text-[27px] font-extrabold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent"
+              className="text-[18px] md:text-[23px] lg:text-[28px] font-extrabold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent"
             >
               DigiTools
             </a>

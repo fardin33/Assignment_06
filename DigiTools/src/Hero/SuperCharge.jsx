@@ -1,4 +1,5 @@
 import React from "react";
+import superchargeImg from "../assets/images/banner.png";
 
 const SuperCharge = () => {
   return (
@@ -70,9 +71,9 @@ const SuperCharge = () => {
               <div className="relative group">
                 <div className="absolute -inset-1 bg-linear-to-r from-purple-100 to-transparent rounded-2xl blur opacity-25"></div>
                 <img
-                  src="https://img.freepik.com/free-vector/digital-transformation-concept-illustration_114360-3990.jpg"
+                  src={superchargeImg}
                   alt="AI Workflow"
-                  className="relative w-full max-w-112.5 object-contain rounded-lg"
+                  className="relative w-full max-w-112.5 object-contain rounded-lg  mb-10 md:mb-13 lg:mb-10 "
                 />
               </div>
             </div>
