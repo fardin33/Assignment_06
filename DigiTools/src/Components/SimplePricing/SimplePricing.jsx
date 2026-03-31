@@ -62,7 +62,7 @@ const SimplePricing = () => {
                 ))}
               </ul>
 
-              <button className="w-full py-3 lg:py-4 bg-[#6366F1] hover:bg-[#4F46E5] text-white font-bold rounded-xl lg:rounded-2xl transition-all active:scale-[0.98] text-sm">
+              <button className="w-full py-3 lg:py-4 border-[#9514FA] bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white border-none hover:from-[#9514FA] hover:to-[#4F39F6] transition-all duration-300 font-bold rounded-xl lg:rounded-2xl active:scale-[0.98] text-sm">
                 Get Started
               </button>
             </div>
@@ -168,7 +168,7 @@ const SimplePricing = () => {
                 ))}
               </ul>
 
-              <button className="w-full py-3 lg:py-4 bg-[#6366F1] hover:bg-[#4F46E5] text-white font-bold rounded-xl lg:rounded-2xl transition-all active:scale-[0.98] text-sm">
+              <button className="w-full py-3 lg:py-4 border-[#9514FA] bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white border-none hover:from-[#9514FA] hover:to-[#4F39F6] transition-all duration-300 font-bold rounded-xl lg:rounded-2xl active:scale-[0.98] text-sm">
                 Contact Sales
               </button>
             </div>

@@ -13,10 +13,10 @@ const CartCheckout = ({
 
   const handleCheckout = () => {
     if (cartItems.length > 0) {
-      toast.success("Order Placed Successfully!");
+      toast.success("Product Purchase Successfully! Thank You 😊");
       clearCart();
     } else {
-      toast.error("Your cart is empty!");
+      toast.error("Your cart is empty! ☹️");
     }
   };
 
@@ -43,12 +43,12 @@ const CartCheckout = ({
           </div>
           <div className="text-center">
             <p className="text-gray-500 font-medium mb-4">
-              Your cart is empty.
+              Your cart is empty. ☹️
             </p>
 
             <button
               onClick={() => setActiveTab("products")}
-              className="px-6 py-3 bg-purple-100 text-[#7C3AED] font-bold rounded-full hover:bg-[#7C3AED] hover:text-white transition-all active:scale-95"
+              className="px-6 py-3 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white border-none hover:from-[#7304c9] hover:to-[#4F39F6] transition-all duration-300 rounded-3xl"
             >
               Explore Products
             </button>
@@ -60,7 +60,7 @@ const CartCheckout = ({
             {cartItems.map((item) => (
               <div
                 key={item.id}
-                className="flex items-center justify-between p-4 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-colors"
+                className="flex items-center justify-between p-4 bg-blue-50 rounded-2xl hover:bg-gray-100 transition-colors"
               >
                 {/* Item Details */}
                 <div className="flex items-center gap-4">
@@ -84,7 +84,7 @@ const CartCheckout = ({
             ))}
           </div>
 
-          <div className="flex items-center justify-between mt-10 mb-6 border-t pt-6">
+          <div className="flex items-center justify-between mt-10 mb-6 pt-6">
             <span className="text-gray-600 font-medium">Total Amount:</span>
             <span className="text-2xl font-extrabold text-gray-900">
               ${totalPrice}
@@ -93,7 +93,7 @@ const CartCheckout = ({
 
           <button
             onClick={handleCheckout}
-            className="w-full py-4 bg-linear-to-r from-[#8B5CF6] to-[#7C3AED] text-white font-bold rounded-full hover:shadow-lg transition-all active:scale-95"
+            className="w-full py-4 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white border-none hover:from-[#7304c9] hover:to-[#4F39F6] transition-all duration-300 rounded-full"
           >
             Proceed To Checkout
           </button>

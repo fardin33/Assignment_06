@@ -15,13 +15,13 @@ const Toggle = ({ activeTab, setActiveTab, cartCount }) => {
       </p>
 
       {/* Toggle Button */}
-      <div className="inline-flex items-center p-1 bg-white border border-gray-100 rounded-full shadow-sm">
+      <div className="inline-flex items-center p-1 bg-white border border-gray-100 rounded-full shadow-sm gap-1.5">
         <button
           onClick={() => setActiveTab("products")}
           className={`px-8 py-2.5 text-sm font-semibold rounded-full transition-all duration-300 ${
             activeTab === "products"
               ? "bg-[#7C3AED] text-white shadow-md shadow-purple-200"
-              : "text-gray-600 hover:bg-gray-50"
+              : "text-gray-600 hover:bg-gray-200"
           }`}
         >
           Products
@@ -31,7 +31,7 @@ const Toggle = ({ activeTab, setActiveTab, cartCount }) => {
           className={`px-8 py-2.5 text-sm font-semibold rounded-full transition-all duration-300 ${
             activeTab === "cart"
               ? "bg-[#7C3AED] text-white shadow-md shadow-purple-200"
-              : "text-gray-600 hover:bg-gray-50"
+              : "text-gray-600 hover:bg-gray-200"
           }`}
         >
           Cart ({cartCount})

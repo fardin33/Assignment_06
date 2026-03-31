@@ -13,7 +13,7 @@ const PremiumTools = ({ toolsPromise, addToCart }) => {
             <CardUi key={tool.id} tool={tool} addToCart={addToCart} />
           ))}
         </div>
-      </div>z
+      </div>
     </div> 
   );
 };

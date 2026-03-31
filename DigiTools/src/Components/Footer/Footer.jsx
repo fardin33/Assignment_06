@@ -1,5 +1,8 @@
 // export default Footer;
 import React from "react";
+import { FaFacebook } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -77,23 +80,6 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-
-              <div className="col-span-2 md:col-span-3 lg:col-span-1 mt-6 md:mt-8 lg:mt-0">
-                <h3 className="font-bold text-base md:text-lg mb-4">
-                  Social Links
-                </h3>
-                <div className="flex flex-row gap-4">
-                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-slate-900 hover:bg-purple-500 hover:text-white transition-all cursor-pointer shrink-0">
-                    <i className="fa-brands fa-instagram text-lg"></i>
-                  </div>
-                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-slate-900 hover:bg-purple-500 hover:text-white transition-all cursor-pointer shrink-0">
-                    <i className="fa-brands fa-facebook-f text-lg"></i>
-                  </div>
-                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-slate-900 hover:bg-purple-500 hover:text-white transition-all cursor-pointer shrink-0">
-                    <i className="fa-brands fa-x-twitter text-lg"></i>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
 
@@ -112,6 +98,9 @@ const Footer = () => {
               </span>
             </div>
           </div>
+          <h2 className="text-[#0F172A] text-[11px] mt-5">
+            Fardin Hassan Jihad
+          </h2>
         </div>
       </div>
     </div>
