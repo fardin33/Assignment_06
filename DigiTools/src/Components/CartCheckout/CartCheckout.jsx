@@ -1,16 +1,19 @@
 import React from "react";
-import { toast } from "react-toastify"; // Correct library import
+import { toast } from "react-toastify";
 
-const CartCheckout = ({ cartItems, removeFromCart, clearCart }) => {
+const CartCheckout = ({
+  cartItems,
+  removeFromCart,
+  clearCart,
+  setActiveTab,
+}) => {
+  // setActiveTab
   const totalPrice = cartItems.reduce((acc, item) => acc + item.price, 0);
   const isCartEmpty = cartItems.length === 0;
 
   const handleCheckout = () => {
     if (cartItems.length > 0) {
-      // 1. Show Success Message
       toast.success("Order Placed Successfully!");
-
-      // 2. Clear all items from cart (Vanish)
       clearCart();
     } else {
       toast.error("Your cart is empty!");
@@ -22,7 +25,7 @@ const CartCheckout = ({ cartItems, removeFromCart, clearCart }) => {
       <h2 className="text-2xl font-bold text-gray-900 mb-8">Your Cart</h2>
 
       {isCartEmpty ? (
-        <div className="grow flex flex-col items-center justify-center space-y-4 animate-fadeIn">
+        <div className="grow flex flex-col items-center justify-center space-y-6 animate-fadeIn">
           <div className="w-20 h-20 bg-gray-50 rounded-full flex items-center justify-center">
             <svg
               className="w-10 h-10 text-gray-300"
@@ -38,7 +41,18 @@ const CartCheckout = ({ cartItems, removeFromCart, clearCart }) => {
               />
             </svg>
           </div>
-          <p className="text-gray-500 font-medium">Your cart is empty.</p>
+          <div className="text-center">
+            <p className="text-gray-500 font-medium mb-4">
+              Your cart is empty.
+            </p>
+
+            <button
+              onClick={() => setActiveTab("products")}
+              className="px-6 py-3 bg-purple-100 text-[#7C3AED] font-bold rounded-full hover:bg-[#7C3AED] hover:text-white transition-all active:scale-95"
+            >
+              Explore Products
+            </button>
+          </div>
         </div>
       ) : (
         <>
@@ -48,6 +62,7 @@ const CartCheckout = ({ cartItems, removeFromCart, clearCart }) => {
                 key={item.id}
                 className="flex items-center justify-between p-4 bg-gray-50 rounded-2xl hover:bg-gray-100 transition-colors"
               >
+                {/* Item Details */}
                 <div className="flex items-center gap-4">
                   <img
                     src={item.icon}
@@ -61,7 +76,7 @@ const CartCheckout = ({ cartItems, removeFromCart, clearCart }) => {
                 </div>
                 <button
                   onClick={() => removeFromCart(item.id)}
-                  className="text-red-500 hover:text-red-700 font-semibold text-sm px-3 py-1 transition-colors"
+                  className="text-red-500 hover:text-red-700 font-semibold text-sm px-3 py-1"
                 >
                   Remove
                 </button>
@@ -78,7 +93,7 @@ const CartCheckout = ({ cartItems, removeFromCart, clearCart }) => {
 
           <button
             onClick={handleCheckout}
-            className="w-full py-4 bg-linear-to-r from-[#8B5CF6] to-[#7C3AED] text-white font-bold rounded-full hover:shadow-lg hover:shadow-purple-200 transition-all active:scale-95"
+            className="w-full py-4 bg-linear-to-r from-[#8B5CF6] to-[#7C3AED] text-white font-bold rounded-full hover:shadow-lg transition-all active:scale-95"
           >
             Proceed To Checkout
           </button>

@@ -37,7 +37,7 @@ function App() {
     setCart((prevCart) => prevCart.filter((item) => item.id !== id));
   };
 
-  // Clear Entire Cart (Checkout er somoy call hobe)
+  // Clear Entire Cart
   const clearCart = () => {
     setCart([]);
   };
@@ -73,6 +73,7 @@ function App() {
                 cartItems={cart}
                 removeFromCart={removeFromCart}
                 clearCart={clearCart}
+                setActiveTab={setActiveTab}
               />
             )}
           </div>
